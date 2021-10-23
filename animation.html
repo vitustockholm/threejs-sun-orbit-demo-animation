@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+
+
+
+    <style>
+   html, body {
+  height: 100%;
+  margin: 0;
+}
+#c {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+    </style>
+  </head>
+  <body><canvas id="c"></canvas>
+
+    <script src='./index.js' type="module">
+       
+    const objects = [];
+     
+    
+     {
+      const color = 0xFFFFFF;
+      const intensity = 3;
+      const light = new THREE.PointLight(color, intensity);
+      scene.add(light);
+    }
+
+    objects.forEach((obj) => {
+      obj.rotation.y = time;
+    });
+    
+    
+    </script>
+  </body>
+</html>
